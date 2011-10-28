@@ -1,0 +1,12 @@
+In this little project i experimented with captcha breaking. I wanted to try
+how captcha braeaking works and if it's possible to implement it in php.
+
+To play arrount with this files you will need the following table:
+
+CREATE TABLE IF NOT EXISTS `decaptcha_templates` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `solution` char(1) NOT NULL,
+  `horizontalProjection` text NOT NULL,
+  `verticalProjection` text NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
